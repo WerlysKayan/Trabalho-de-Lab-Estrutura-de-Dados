@@ -19,10 +19,10 @@ public class main {
         int comparacoesInsertionSort = 0;
         int trocasInsertionSort = 0;
 
-        // Inicio do cronômetro
+        // Código do Inicio do cronômetro
         long tempoInicialInsertionSort = System.currentTimeMillis();
 
-        // Insertion Sort
+        // Código Insertion Sort
         for (int i = 1; i < arrayInsertion.size(); i++) {
             int temporario = arrayInsertion.get(i);
             int j = i - 1;
@@ -35,20 +35,20 @@ public class main {
             }
             arrayInsertion.set(j + 1, temporario);
         }
-        // Fim do cronômetro
+        // Código do Fim do cronômetro
         long tempoFinalInsertionSort = System.currentTimeMillis();
 
         System.out.println("\nInsertion Sort: ");  
-        System.out.println("Trocas de posicao:      " + trocasInsertionSort);
-        System.out.println("Comparacoes realizadas: " + comparacoesInsertionSort);
+        System.out.println("Trocas de posicoes:      " + trocasInsertionSort);
+        System.out.println("Quantidade de Comparacoes realizadas: " + comparacoesInsertionSort);
         System.out.println("Tempo de execucao:      " + (tempoFinalInsertionSort - tempoInicialInsertionSort) + " milissegundos\n");
 
-        // Selection Sort ================================================================================================================
+        // Código Selection Sort 
 
         int comparacoesSelectionSort = 0;
         int trocasSelectionSort = 0;
         
-        // Início do cronômetro
+        // Código do Início do cronômetro
         long tempoInicialSelectionSort = System.currentTimeMillis();
 
         for (int i = 0; i < arraySelection.length - 1; i++) {
@@ -72,16 +72,16 @@ public class main {
         long tempoFinalSelectionSort = System.currentTimeMillis();
         
         System.out.println("\nSelection Sort: ");        
-        System.out.println("Trocas de posica:       " + trocasSelectionSort);
-        System.out.println("Comparacoes realizadas: " + comparacoesSelectionSort);
+        System.out.println("Trocas de posicoes:       " + trocasSelectionSort);
+        System.out.println("Quantidade de Comparacoes realizadas: " + comparacoesSelectionSort);
         System.out.println("Tempo de execucao:      " + (tempoFinalSelectionSort - tempoInicialSelectionSort) + " milissegundos\n");
 
-        // Boubble Sort ================================================================================================================
+        // Código do Boubble Sort
 
         int comparacoesBubbleSort = 0;
         int trocasBubbleSort = 0;
         
-        // Final do cronômetro
+        // Código do Final do cronômetro
         long tempoInicialBubbleSort = System.currentTimeMillis();
 
         for (int i = 0; i < arrayBubble.length - 1; i++) {
@@ -96,12 +96,12 @@ public class main {
             }
         }
         
-        // Final do cronômetro
+        // Código do Final do cronômetro
         long tempoFinalBubbleSort = System.currentTimeMillis();
 
         System.out.println("\nBubble Sort: ");        
-        System.out.println("Trocas de posicao:      " + trocasBubbleSort);
-        System.out.println("Comparacoes realizadas: " + comparacoesBubbleSort);
+        System.out.println("Trocas de posicoes:      " + trocasBubbleSort);
+        System.out.println("Quantidade de Comparacoes realizadas: " + comparacoesBubbleSort);
         System.out.println("Tempo de execucao:      " + (tempoFinalBubbleSort - tempoInicialBubbleSort) + " milissegundos\n");
 
     }
